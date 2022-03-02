@@ -10,6 +10,10 @@ app.post('/', (req, res) => {
     res.send('Bye World!')
   })
 
+  app.post('/lists/list', (req, res) => {
+    res.send('List!')
+  })
+
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
